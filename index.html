@@ -6,11 +6,25 @@
 </head>
 <body>
 
+<script src="https://cdn.rawgit.com/jquery/esprima/1.2/esprima.js"></script>
+<script src="https://cdn.rawgit.com/estools/escodegen/1.6.1/escodegen.browser.js"></script>
 <script src="src/jsRepl.js"></script>
 
-<pre><code contentEditable="true">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<style>
+  pre {
+    width: 50%;
+    position: relative;
+  }
+</style>
+
+<pre><code contentEditable="true" class="javascript">
   var test = 'a test';
-  console.log('Now this is ' + test);
+
+  'Now this is ' + test;
 </code></pre>
 
 <script>
